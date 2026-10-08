@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyByte - Learn Python</title>
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="styles.css">
+     <!-- Link to Font Awesome library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="homepage.html" class="logo">PyByte</a> 
+          <ul class="nav-links" id="nav-links">
+            <li><a href="login.php"><i class="fas fa-sign-in-alt"></i> Log In</a></li> 
+            <li><a href="signup.php"><i class="fas fa-user-plus"></i> Sign Up</a></li> 
+          </ul>
+          <!-- Mobile menu button -->
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+    <!-- Greeting Section -->
+    <div class="page-hero">
+        <h1>Hello, World!</h1>
+        <p>Welcome to PyByte, where you'll learn Python byte by byte. Our platform offers comprehensive tutorials, hands-on exercises, and a supportive community to help you master Python programming.</p>
+        <a href="login.php" class="btn-hero"><i class="fas fa-graduation-cap"></i> Log In to Get Started</a>
+    </div>
+
+     <!-- Content Section -->
+     <div class="page-content">
+        <h2>Why Learn Python?</h2>
+        <div class="page-blocks-container">
+            <div class="page-blocks">
+                <div class="page-block"> <i class="fas fa-graduation-cap"></i>
+                    <h3>Easy to Learn</h3>
+                    <p>Python's readable syntax makes it easy to get started, perfect for beginners!</p>
+                </div>
+                <div class="page-block"> <i class="fas fa-bolt"></i>
+                    <h3>Powerful & Versatile</h3>
+                    <p>Python is widely used in web development, data science, automation, and more.</p>
+                </div>
+                <div class="page-block"> <i class="fas fa-users"></i>
+                    <h3>Active Community</h3>
+                    <p>With millions of developers around the world, you will always find support and resources.</p>
+                </div>
+                <div class="page-block"> <i class="fas fa-box-open"></i>
+                    <h3>Extensive Libraries</h3>
+                    <p>Vast collection of libraries and frameworks, such as NumPy, Pandas, and Django.</p>
+                </div>
+                <div class="page-block"> <i class="fas fa-briefcase"></i>
+                    <h3>Career Opportunities</h3>
+                    <p>Python skills are in high demand across various industries, making it a valuable asset for career growth and job opportunities.</p>
+                </div>
+            </div>
+            <button class="page-slider-btn prev" onclick="prevSlide()">&#10094;</button>
+            <button class="page-slider-btn next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <!-- New Section: Let's Start With A Simple Example -->
+        <div class="content2">
+            <h2>Let's Start With A Simple Example</h2>
+            <p>Here’s how easy it is to print something on the screen in Python. Just write:</p>
+            <div class="code-box">
+                <span class="function">print</span><span class="punctuation">(</span><span class="string">"Hello, World!"</span><span class="punctuation">)</span>
+            </div>
+            <p>This is the classic "Hello, World!" program in Python, which is often the first step for every Python learner.</p>
+        </div>
+      
+
+        <!-- Explore Topics Section -->
+        <div class="explore-section">
+            <h2>Explore Topics</h2>
+            <div class="page-dropdown-container">
+                <!-- Python Fundamentals Dropdown -->
+                <div class="page-dropdown">
+                    <span>Python Fundamentals</span>
+                    <div class="page-dropdown-content">
+                        <span>Variables</span>
+                        <span>Data Types</span>
+                        <span>Operators</span>
+                        <span>Input and Output</span>
+                    </div>
+                </div>
+
+                <!-- Python Flow Control Dropdown -->
+                <div class="page-dropdown">
+                    <span>Python Flow Control</span>
+                    <div class="page-dropdown-content">
+                        <span>If-Statements</span>
+                        <span>Loops</span>
+                        <span>Break and Continue</span>
+                    </div>
+                </div>
+
+                <!-- Python Data Structures Dropdown -->
+                <div class="page-dropdown">
+                    <span>Python Data Structures</span>
+                    <div class="page-dropdown-content">
+                        <span>Strings</span>
+                        <span>Lists</span>
+                        <span>Tuples</span>
+                        <span>Dictionaries</span>
+                        <span>Sets</span>
+                    </div>
+                </div>
+
+                <!-- Python Functions Dropdown -->
+                <div class="page-dropdown">
+                    <span>Python Functions</span>
+                    <div class="page-dropdown-content">
+                        <span>Defining Functions</span>
+                        <span>Arguments and Return</span>
+                        <span>Lambda Functions</span>
+                        <span>Recursion</span>
+                    </div>
+                </div>
+
+                <!-- Python OOP Dropdown -->
+                <div class="page-dropdown">
+                    <span>Python OOP</span>
+                    <div class="page-dropdown-content">
+                        <span>Classes and Objects</span>
+                        <span>Attributes and Methods</span>
+                        <span>Inheritance and Polymorphism</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Learning Button -->
+        <button class="page-start-learning-btn" onclick="window.location.href='login.php'"> <i class="fas fa-book"></i> Start Learning</button>
+    </div>
+    <button id="back-to-top" class="btn-back-to-top" onclick="scrollToTop()">↑</button>
+
+   
+    <!-- Footer -->
+    <footer class="footerr">
+        <p>&copy; 2025 PyByte. All rights reserved.</p> 
+        <!--Contact info -->
+        <div class="contact-info">
+            <p>Contact Us</p>
+            <a href="mailto:pybyte@hotmail.com">pybyte@hotmail.com</a>
+        </div>
+    </footer>
+    <script src="script.js">
+    </script>
+  <script>
+    window.onscroll = function() {
+        let scrollButton = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollButton.style.display = "block"; 
+        } else {
+            scrollButton.style.display = "none"; 
+        }
+    };
+    
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    </script>
+</body>
+</html>
